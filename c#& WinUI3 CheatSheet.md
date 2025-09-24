@@ -10,7 +10,6 @@ Hier vind je een overzicht van de packages die je nodig hebt om te werken met ee
 
 <br>
 <br>
-<br>
 
 # Packages voor WinUi3
 dit zijn alle packages die je nodig hebt om te werken met een database in C# en WinUi3.
