@@ -53,13 +53,13 @@ dit zijn alle packages die je nodig hebt om te werken met een database in C# en 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
                 optionsBuilder.UseMySql(
-                    "server=localhost;
-                     port=3306;
-                     user=root;
-                     password=;
-                     database=databasename",
-                    ServerVersion.Parse("10.4.17-mariadb")
-                );
+                    optionsBuilder.UseMySql(
+                        @"server=localhost;port = 3306;
+                          user = root;
+                          password =;
+                          database = databasename",
+                        ServerVersion.Parse("10.4.17-mariadb")
+                    );
             }
         }
     }
