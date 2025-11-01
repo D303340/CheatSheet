@@ -17,7 +17,8 @@ Before making a custom item/block, you need a texture pack for it.
 }
 ```
 
-> [! NOTE ] The `pack_format` is the version of the texture pack format. the latest version is 64, check [here](https://minecraft.fandom.com/wiki/Pack_format) for the version you need.
+> [!NOTE ] 
+> The `pack_format` is the version of the texture pack format. the latest version is 64, check [here](https://minecraft.fandom.com/wiki/Pack_format) for the version you need.
 
 3. inside the folder, create a folder named `assets`.
 
@@ -76,7 +77,8 @@ Now you can start making your custom item/block.
     ```
     `"model"` will reference the json file you made in step 2.
 
-    > [! NOTE ] if you want to test your item in game, you can use this command:
+    > [!NOTE ] 
+    > if you want to test your item in game, you can use this command:
     > ``` java
     > /give @p stick[item_model="<namespace>:<your_item>"]
     > ```
