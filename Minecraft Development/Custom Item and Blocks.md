@@ -83,3 +83,23 @@ Now you can start making your custom item/block.
     > /give @p stick[item_model="<namespace>:<your_item>"]
     > ```
     > this will give you a stick that has your texture on it.
+
+
+
+
+### Code
+
+1. make an `ItemStack` property that will be used to create your item.
+
+    example:
+    ```java
+    ItemStack item = new ItemStack(Material.APPLE, 1);
+    ```
+    > [!NOTE ] 
+    > `Material` is an enormous enum that contains all the itemsin the game.
+
+2. give your item a custom Item Model:
+
+    ```java
+    item.setData(DataComponentTypes.ITEM_MODEL, Key.key("<namespace>", "<item_name>"));
+    ```
