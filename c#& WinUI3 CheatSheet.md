@@ -14,10 +14,10 @@ Hier vind je een overzicht van de packages die je nodig hebt om te werken met ee
 # Packages voor WinUi3
 dit zijn alle packages die je nodig hebt om te werken met een database in C# en WinUi3.
 
-> ### `Microsoft.EntityFramworkCore.Tools`
+> ### `Microsoft.EntityFrameworkCore.Tools`
 > dit is om een nieuwe database te maken via de `Package Manager Console`
 
-> ### `Pomelo.EntityFramworkCore.MySql`
+> ### `Pomelo.EntityFrameworkCore.MySql`
 > dit is de `EntityFramework`. hiermee kan je calls naar je database maken om bijvoorbeeld data op te halen.
 
 > ### `System.Text.Json`
@@ -53,13 +53,12 @@ dit zijn alle packages die je nodig hebt om te werken met een database in C# en 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
                 optionsBuilder.UseMySql(
-                    optionsBuilder.UseMySql(
-                        @"server=localhost;port = 3306;
-                          user = root;
-                          password =;
-                          database = databasename",
-                        ServerVersion.Parse("10.4.17-mariadb")
-                    );
+                    @"server=localhost;port = 3306;
+                      user = root;
+                      password =;
+                      database = databasename",
+                    ServerVersion.Parse("10.4.17-mariadb")
+                );
             }
         }
     }
